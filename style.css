@@ -7,18 +7,27 @@
 }
 
 body {
-    width: 100vh;
-    min-width: 430px;
-    max-width: 700px;
+
+
     margin: auto;
-    background-color: aquamarine;
+    margin-top: 87px;
 }
-
-
 
 button {
     background: none;
     border: none;
+}
+
+section {
+    text-align: center;
+}
+
+.nav-header {
+    background-color: #1B191D;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    width: 100%;
 }
 
 .nav-header a {
@@ -26,19 +35,35 @@ button {
     text-decoration: none;
 }
 
-.nav-header {
-    padding: 10px;
-    text-align: center;
-}
-
 .nav-header img {
     height: 40px;
 }
 
 .nav-header button {
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 
 .Crypton-logo img {
     height: 60px;
+}
+
+.background-body {
+    background-image: url('images/background-geral.png');
+    height: 100vh; 
+    width: 100%; 
+    background-size: cover; */
+}
+
+footer {
+    background-color: brown;
+    text-align: center;
+    padding: 15px;
+}
+
+.landing-page-footer p,
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 10px;
 }
