@@ -46,7 +46,7 @@ footer {
 .landing-page-footer button {
     background: none;
     border: none;
-    margin: 10px;
+    margin: 0px 5px;
 }
 
 .landing-page-footer p,
@@ -55,6 +55,7 @@ a {
     text-decoration: none;
     font-size: 14px;
     line-height: 10px;
+    bottom: 10px;
 }
 
 .landing-page-footer a {
@@ -64,13 +65,12 @@ a {
 body {
     margin-top: 110px;
     width: 100%;
-    /* display: flex;
-    flex-direction: column; */
+    height: 100vh;
 }
 
 .background-body {
     background-image: url('images/background-geral.png');
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-size: cover;
     display: flex;
@@ -78,7 +78,6 @@ body {
 }
 
 .body-content {
-    /* background-color: violet; */
     width: 80%;
     height: 100%;
     align-self: center;
@@ -87,23 +86,27 @@ body {
 
 .left {
     width: 50%;
-    margin-right: 30px;
-    /* background-color: rgb(95, 35, 95); */
+    text-align: center;
+    margin-right: 25px;
 }
 
 .right {
     width: 50%;
     background-color: yellowgreen;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
 .title-description {
-    /* background-color: turquoise; */
     margin: 80px 0px 20px 20px;
+    margin: auto;
+    margin-top: 80px;
+    text-align: left;
+    margin-bottom: 80px;
+    
 }
 
 .title-description h1 {
-    font-size: 70px;
+    font-size: 74px;
     color: #ffffff;
     font-weight: 500;
     line-height: 75px;
@@ -117,25 +120,19 @@ body {
     font-style: italic;
 }
 
-/* .estimated-balance img {
-    width: 80%;
-    height: 10%;
-    margin: 30px 0 20px 20px;
-    border-radius: 20px;
-} */
-
 .estimated-balance {
     background-image: url('images/background-geral.png');
-    margin: 0 190px 20px 0px;
     padding: 20px;
     border-radius: 15px;
     background-size: cover;
     border: 1px #1B191D solid;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
 }
 
 .botoes {
     display: flex;
+    align-self: center;
 }
 
 .estimated-balance h2,
@@ -146,7 +143,6 @@ h4 {
 }
 
 .estimated-balance h2 {
-    position: relative;
     top: 15px;
 }
 
@@ -169,7 +165,8 @@ h4 {
 }
 
 .botoes {
-    margin: 25px 10px 5px 0px;
+    margin: 25px 0px 0px 0px;
+
 }
 
 .botoes button p {
@@ -182,7 +179,7 @@ h4 {
     border: none;
     background-color: #1B191D;
     padding: 20px 40px;
-    margin: 0 15px 0 0;
+    margin: 0 5px 0 5px;
     position: relative;
     bottom: 10px;
 }
@@ -190,3 +187,17 @@ h4 {
 .estimated-balance button:hover {
     background-color: #363E6C;
 }
+
+.coin-showcase {
+    background-color: steelblue;
+    height: 50%;
+}
+
+.coins {
+    background-color: #1B191D;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+
