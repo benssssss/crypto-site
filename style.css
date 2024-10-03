@@ -17,7 +17,8 @@
     padding: 10px;
     top: 0;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-header a {
@@ -70,134 +71,206 @@ body {
 
 .background-body {
     background-image: url('images/background-geral.png');
-    height: 90vh;
-    width: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .body-content {
-    width: 80%;
-    height: 100%;
     align-self: center;
     display: flex;
+    height: 90vh;
+    width: 1400px;
+    max-width: 100%;
+    padding-top: 70px;
 }
 
-.left {
-    width: 50%;
-    text-align: center;
-    margin-right: 25px;
-}
-
-.right {
-    width: 50%;
-    background-color: yellowgreen;
-    margin-left: 25px;
+.parte-esquerda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
 }
 
 .title-description {
-    margin: 80px 0px 20px 20px;
-    margin: auto;
-    margin-top: 80px;
-    text-align: left;
-    margin-bottom: 80px;
-    
+    margin: 0px 0px 50px 0;
 }
 
 .title-description h1 {
-    font-size: 74px;
+
+    font-size: 63px;
+    font-weight: 600;
+    line-height: 65px;
+    margin-bottom: 10px;
     color: #ffffff;
-    font-weight: 500;
-    line-height: 75px;
+    text-justify: auto;
 }
 
 .title-description h2 {
     font-size: 50px;
-    color: #ffffff;
-    font-weight: 600;
-    color: #1B191D;
     font-style: italic;
+    font-weight: 600;
+    color: #1B191D
 }
 
-.estimated-balance {
+.botao-compra {
     background-image: url('images/background-geral.png');
-    padding: 20px;
+    margin: 50px 0px 50px 0;
+    padding: 35px;
     border-radius: 15px;
+    border: 3px solid #8A64A9;
     background-size: cover;
-    border: 1px #1B191D solid;
-    display: flex;
-    flex-direction: column;
 }
 
-.botoes {
-    display: flex;
-    align-self: center;
-}
-
-.estimated-balance h2,
-h4 {
-    font-size: 15px;
-    font-weight: 400;
+.botao-compra h2 {
     color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.estimated-balance h2 {
-    top: 15px;
-}
-
-.estimated-balance span {
-    color: #1B191D;
-}
-
-.estimated-balance h3 {
+.botao-compra h3 {
     font-size: 50px;
-    font-weight: 300;
-    position: relative;
-    top: 10px;
+    font-weight: 400;
 }
 
-.estimated-balance span {
-    font-size: 15px;
-    font-weight: 600;
+.botao-compra span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1B191D;
     font-style: italic;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .botoes {
-    margin: 25px 0px 0px 0px;
-
+    display: flex;
+    gap: 10px;
 }
 
-.botoes button p {
+.botao-compra button {
+    border: none;
+    background-color: #1B191D;
+    border-radius: 10px;
+    padding: 16px 40px;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.botao-compra a {
     font-size: 20px;
     font-weight: 700;
 }
 
-.botoes button {
-    border-radius: 10px;
-    border: none;
-    background-color: #1B191D;
-    padding: 20px 40px;
-    margin: 0 5px 0 5px;
-    position: relative;
-    bottom: 10px;
-}
-
-.estimated-balance button:hover {
-    background-color: #363E6C;
+.parte-direita {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 60px;
 }
 
 .coin-showcase {
-    background-color: steelblue;
-    height: 50%;
-}
-
-.coins {
+    padding: 30px 20px;
     background-color: #1B191D;
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
+    border: 3px solid #8A64A9;
+    border-radius: 25px;
+    margin-bottom: 50px;
 }
 
+.coin-showcase h2 {
+    color: #ffffff;
+    font-weight: 500;
+}
 
+.coin-showcase h3 {
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 85px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.coin-showcase img {
+    height: 30px;
+    align-self: center;
+    margin-right: 10px;
+}
+
+.bitcoin span {
+    margin-left: 30px;
+    font-size: 24px;
+    color: #8A64A9;
+    font-weight: 600;
+}
+
+.bnb span {
+    margin-left: 30px;
+    font-size: 24px;
+    color: #5a67b1;
+    font-weight: 600;
+}
+
+.xrp span {
+    margin-left: 30px;
+    font-size: 24px;
+    color: #5a67b1;
+    font-weight: 600;
+}
+
+.eth span {
+    color: #8A64A9;
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.coin-showcase .bitcoin {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.coin-showcase .bnb {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.coin-showcase .xrp {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.coin-showcase .eth {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.coin-showcase p {
+    font-weight: 500;
+    color: #747474;
+}
+
+.news {
+    margin-top: 60px;
+    border: 3px solid #5a67b1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #1B191D;
+    align-content: center;
+}
+
+.news p {
+    padding: 20px 25px 25px 25px;
+    color: #8A64A9;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.borda-decorativa {
+    align-self: center;
+    border-bottom: 2px solid #5a67b1;
+    width: 95%;
+}
