@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.nav-header button {
+    background: none;
+    border: none;
+    margin: 10px;
+}
+
+.nav-header {
+    background-color: #1B191D;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Crypton-logo img {
+    height: 70px;
+}
+
+img {
+    height: 70px;
+}
+
+footer {
+    background-color: #1B191D;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.landing-page-footer button {
+    background: none;
+    border: none;
+    margin: 0px 5px;
+}
+
+
+body {
+    margin-top: 110px;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-body {
+    background-image: url('images/background-geral.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.body-content {
+    display: flex;
+    align-self: center;
+    height: 90vh;
+    align-items: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.terms {
+    height: 600px;
+    width: 500px;
+    background-color: #1B191D;
+    padding: 50px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+
+.privacy {
+    height: 600px;
+    width: 500px;
+    background-color: #1B191D;
+    padding: 50px;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+
+.privacy p {
+    margin-top: 10px;
+}
+
+.terms p {
+    margin-top: 20px;
+}
+
+.terms img {
+    height: 50px;
+}
+
+.privacy img {
+    height: 60px;
+}
+
+.terms h2 {
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 400;
+}
