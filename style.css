@@ -17,27 +17,22 @@ a {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
     background-image: url('images/backgroud-gera-baixa-opac.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 95px;
     max-width: 1400px;
-    min-width: 660px;
+
 }
 
 html {
     display: flex;
     justify-content: center;
     width: 100%;
-
 }
 
 /* ------------------------- Header ------------------------------ */
-
-
 
 .header {
     display: flex;
@@ -212,7 +207,7 @@ h2 {
 
 .lista-botoes-estimated p {
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .dados-numeros {
